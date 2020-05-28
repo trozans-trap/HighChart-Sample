@@ -1,0 +1,19 @@
+html
+   head
+      title Highcharts Tutorial/title
+      script(src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+      script(src = "https://code.highcharts.com/highcharts.js") 
+      
+   body
+      #container(style = "width: 550px; height: 400px; margin: 0 auto")
+      h1 hello
+      script(type='text/javascript' src='./src/app.js')
+      script.
+        $(document).ready(function() {  
+            json = !{JSON.stringify(chartJson.json)}
+            console.log(json);
+            $('#container').highcharts(json);  
+         });
+
+
+        
